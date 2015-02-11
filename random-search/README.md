@@ -27,7 +27,7 @@ return Best
 * The algorithm works well for low problem dimensions. However, if the dimensions scales up, the algorithms does not scale well with it.
 * The random candidates must be uniformly distributed. This may be a problem in some specific search spaces.
 
-### The actual problem
+## The actual problem
 
 The code in `rs.go` deals with actual problem. The problem is the following:
 
