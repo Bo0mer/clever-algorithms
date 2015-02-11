@@ -23,7 +23,7 @@ return Best
 
 ## Notes
 
-* The worst case performance of the algorithm is worse than brute-force (enumeration) search.
+* The worst case performance of the algorithm for finding the optimal value is worse than brute-force (enumeration) search.
 * The algorithm works well for low problem dimensions. However, if the dimensions scales up, the algorithms does not scale well with it.
 * The random candidates must be uniformly distributed. This may be a problem in some specific search spaces.
 
