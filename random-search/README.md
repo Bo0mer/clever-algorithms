@@ -1,11 +1,9 @@
 # Random Search
 
-## Overview
-
-### Idea
+## Idea
 The algorithm is simple. Generate a random candidate from the search space, try it out, and if it gives better result than the one which we currently have, save it. Repeat this as many iterations as needed.
 
-### Pseudocode
+## Pseudocode
 
 ```
 Input: Iterations, ProblemSize, SearchSpace
@@ -23,18 +21,18 @@ return Best
 
 ```
 
-### Notes
+## Notes
 
 * The worst case performance of the algorithm is worse than brute-force (enumeration) search.
 * The algorithm works well for low problem dimensions. However, if the dimensions scales up, the algorithms does not scale well with it.
-* The random candidates must be uniformly distributed. This may be a problem in specific search spaces.
+* The random candidates must be uniformly distributed. This may be a problem in some specific search spaces.
 
 ### The actual problem
 
 The code in `rs.go` deals with actual problem. The problem is the following:
 
-Given a function `f(x1, x2, ..., xn) = sum(xi^2)`, find `min(f)`, where `-5.0 < xi < 5.0 for i in [1, n]`.
-We'll solve the problem for n = 2. As it is obvious, the best possible solution si f(0, 0) = 0.
+Given a function `f(x1, x2, ..., xn) = sum(xi^2)`, find `min(f)`, where `-5.0 < xi < 5.0, for i in [1, n]`.
+We'll solve the problem for n = 2. As it is obvious, the best possible solution is f(0, 0) = 0.
 
 Below is table with the output for the specified number of iterations.
 
